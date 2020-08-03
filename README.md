@@ -18,3 +18,5 @@ To use this code, follow the instructions:
 # Notes
 
 - Keep in mind all of the role IDs, channel IDs, etc. were all for my test server that I used for the tutorial. You must configure it yourself by changing the IDs to meet your needs.
+
+- If you need additional help, please feel free to join our community Discord server! http://discord.codering.io/
