@@ -2,9 +2,7 @@ require("dotenv").config();
 
 const { Client, WebhookClient } = require('discord.js');
 
-const client = new Client({
-  partials: ['MESSAGE', 'REACTION']
-});
+const client = new Client({partials: ['MESSAGE', 'REACTION']}, { disableMentions: "everyone" }, { shardCount: 'auto' });
 
 const webhookClient = new WebhookClient(
   process.env.WEBHOOK_ID,
