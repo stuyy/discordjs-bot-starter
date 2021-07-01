@@ -13,11 +13,11 @@ const webhookClient = new WebhookClient(
 
 const PREFIX = "$";
 
-client.on('ready', () => {
+client.once('ready', () => {
   console.log(`${client.user.tag} has logged in.`);
 });
 
-client.on('message', async (message) => {
+client.on('message', async message => {
   if (message.author.bot) return;
   if (message.content.startsWith(PREFIX)) {
     const [CMD_NAME, ...args] = message.content
