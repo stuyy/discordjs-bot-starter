@@ -2,7 +2,7 @@ require("dotenv").config();
 
 const { Client, WebhookClient } = require('discord.js');
 
-const client = new Client({
+const client = new Client({ intents: [GatewayIntentBits.Guilds] },{
   partials: ['MESSAGE', 'REACTION']
 });
 
